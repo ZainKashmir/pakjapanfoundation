@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import logo from "./assets/images/logo without white bg.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="bgImage">
+        <div style={{ display: "flex" }}>
+          <div className="logo">
+            <img src={logo} alt="pakjapan.co" className="logosize" />
+          </div>
+          <div class="topleft">
+            <p>
+              <p>
+                <b>Pak Japan Foundation</b> {" "}
+                it's all about Japan
+              </p>
+            </p>
+          </div>
+        </div>
+        <div class="bottomleft">
+          <p>
+            We are sorry, the site is under maintenance. You are requested to
+            contact us on WhatsApp No.
+            <b>+92-322-945-1000</b>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
